@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nath Sahu | Ultimate Command Center</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="bg-animation"></div>
+
+    <nav class="navbar">
+        <div class="logo">Nath<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#ubuntu">Ubuntu</a></li>
+            <li><a href="#nethunter">Kali</a></li>
+            <li><a href="#shortcuts">Shortcuts</a></li>
+            <li><a href="#customize">Customize</a></li>
+            <li><a href="#termux-x11">Termux-X11</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Nath Sahu</span></h1>
+            <p>Professional Linux Environment Setup & Documentation</p>
+        </div>
+    </section>
+
+    <div class="box-wrapper">
+        <div class="box" onclick="scrollToSection('ubuntu')"><i class="fab fa-ubuntu"></i> Ubuntu</div>
+        <div class="box" onclick="scrollToSection('nethunter')"><i class="fas fa-biohazard"></i> Kali</div>
+        <div class="box" onclick="scrollToSection('shortcuts')"><i class="fas fa-code"></i> Shortcuts</div>
+        <div class="box" onclick="scrollToSection('customize')"><i class="fas fa-sliders"></i> Customize</div>
+        <div class="box" onclick="scrollToSection('termux-x11')"><i class="fas fa-desktop"></i> Termux-X11</div>
+    </div>
+
+    <main class="container">
+
+        <section id="ubuntu" class="command-section">
+            <h2><i class="fab fa-ubuntu"></i> Ubuntu Installation (Proot-Distro)</h2>
+            <div class="cmd-item"><p class="instruction"><strong>Location:</strong> Termux | <strong>Task:</strong> Update pkg</p><div class="cmd-box"><code>pkg update && pkg upgrade -y</code><button onclick="copyText(this)">Copy</button></div></div>
+            <div class="cmd-item"><p class="instruction"><strong>Location:</strong> Termux | <strong>Task:</strong> Proot-distro</p><div class="cmd-box"><code>pkg install proot-distro -y</code><button onclick="copyText(this)">Copy</button></div></div>
+            <div class="cmd-item placeholder"><p class="instruction">Description here</p><div class="cmd-box"><code># Empty Slot 3</code><button onclick="copyText(this)">Copy</button></div></div>
+            <div class="cmd-item placeholder"><p class="instruction">Description here</p><div class="cmd-box"><code># Empty Slot 4</code><button onclick="copyText(this)">Copy</button></div></div>
+            <div class="cmd-item placeholder"><p class="instruction">Description here</p><div class="cmd-box"><code># Empty Slot 5</code><button onclick="copyText(this)">Copy</button></div></div>
+            <div class="cmd-item placeholder"><p class="instruction">Description here</p><div class="cmd-box"><code># Empty Slot 6</code><button onclick="copyText(this)">Copy</button></div></div>
+            <div class="cmd-item placeholder"><p class="instruction">Description here</p><div class="cmd-box"><code># Empty Slot 7</code><button onclick="copyText(this)">Copy</button></div></div>
+            <div class="cmd-item placeholder"><p class="instruction">Description here</p><div class="cmd-box"><code># Empty Slot 8</code><button onclick="copyText(this)">Copy</button></div></div>
+        </section>
+
+        <section id="nethunter" class="command-section">
+            <h2><i class="fas fa-biohazard"></i> Kali NetHunter Installation</h2>
+            <div class="cmd-item"><p class="instruction"><strong>Location:</strong> Termux | <strong>Task:</strong> Download Installer</p><div class="cmd-box"><code>wget -O install-nethunter-termux https://offs.ec/2MdgSTS</code><button onclick="copyText(this)">Copy</button></div></div>
+            <div class="cmd-item"><p class="instruction"><strong>Location:</strong> Termux | <strong>Task:</strong> Execute Permissions</p><div class="cmd-box"><code>chmod +x install-nethunter-termux</code><button onclick="copyText(this)">Copy</button></div></div>
+            <div class="cmd-item placeholder"><p class="instruction">Description here</p><div class="cmd-box"><code># Empty Slot 3</code><button onclick="copyText(this)">Copy</button></div></div>
+            <div class="cmd-item placeholder"><p class="instruction">Description here</p><div class="cmd-box"><code># Empty Slot 4</code><button onclick="copyText(this)">Copy</button></div></div>
+            <div class="cmd-item placeholder"><p class="instruction">Description here</p><div class="cmd-box"><code># Empty Slot 5</code><button onclick="copyText(this)">Copy</button></div></div>
+            <div class="cmd-item placeholder"><p class="instruction">Description here</p><div class="cmd-box"><code># Empty Slot 6</code><button onclick="copyText(this)">Copy</button></div></div>
+            <div class="cmd-item placeholder"><p class="instruction">Description here</p><div class="cmd-box"><code># Empty Slot 7</code><button onclick="copyText(this)">Copy</button></div></div>
+            <div class="cmd-item placeholder"><p class="instruction">Description here</p><div class="cmd-box"><code># Empty Slot 8</code><button onclick="copyText(this)">Copy</button></div></div>
+        </section>
+
+        <section id="shortcuts" class="command-section">
+            <h2><i class="fas fa-code"></i> Create Your Own Shortcuts</h2>
+            <div class="cmd-item"><p class="instruction"><strong>Location:</strong> Termux/Linux | <strong>Task:</strong> Open Bash Configuration</p><div class="cmd-box"><code>nano .bashrc</code><button onclick="copyText(this)">Copy</button></div></div>
+            <div class="cmd-item"><p class="instruction"><strong>Location:</strong> Nano | <strong>Task:</strong> Create Alias (Ex: update)</p><div class="cmd-box"><code>alias upg='pkg update && pkg upgrade'</code><button onclick="copyText(this)">Copy</button></div></div>
+            <div class="cmd-item placeholder"><p class="instruction">Description here</p><div class="cmd-box"><code># Empty Slot 3</code><button onclick="copyText(this)">Copy</button></div></div>
+            <div class="cmd-item placeholder"><p class="instruction">Description here</p><div class="cmd-box"><code># Empty Slot 4</code><button onclick="copyText(this)">Copy</button></div></div>
+            <div class="cmd-item placeholder"><p class="instruction">Description here</p><div class="cmd-box"><code># Empty Slot 5</code><button onclick="copyText(this)">Copy</button></div></div>
+            <div class="cmd-item placeholder"><p class="instruction">Description here</p><div class="cmd-box"><code># Empty Slot 6</code><button onclick="copyText(this)">Copy</button></div></div>
+            <div class="cmd-item placeholder"><p class="instruction">Description here</p><div class="cmd-box"><code># Empty Slot 7</code><button onclick="copyText(this)">Copy</button></div></div>
+            <div class="cmd-item placeholder"><p class="instruction">Description here</p><div class="cmd-box"><code># Empty Slot 8</code><button onclick="copyText(this)">Copy</button></div></div>
+        </section>
+
+        <section id="customize" class="command-section">
+            <h2><i class="fas fa-magic"></i> Customize Your Linux Desktop</h2>
+            <div class="cmd-item"><p class="instruction"><strong>Location:</strong> Ubuntu/Kali | <strong>Task:</strong> Install XFCE Desktop</p><div class="cmd-box"><code>apt install xfce4 xfce4-goodies -y</code><button onclick="copyText(this)">Copy</button></div></div>
+            <div class="cmd-item"><p class="instruction"><strong>Location:</strong> Desktop | <strong>Task:</strong> Install Midnight Theme</p><div class="cmd-box"><code>sudo apt install midnight-theme</code><button onclick="copyText(this)">Copy</button></div></div>
+            <div class="cmd-item placeholder"><p class="instruction">Description here</p><div class="cmd-box"><code># Empty Slot 3</code><button onclick="copyText(this)">Copy</button></div></div>
+            <div class="cmd-item placeholder"><p class="instruction">Description here</p><div class="cmd-box"><code># Empty Slot 4</code><button onclick="copyText(this)">Copy</button></div></div>
+            <div class="cmd-item placeholder"><p class="instruction">Description here</p><div class="cmd-box"><code># Empty Slot 5</code><button onclick="copyText(this)">Copy</button></div></div>
+            <div class="cmd-item placeholder"><p class="instruction">Description here</p><div class="cmd-box"><code># Empty Slot 6</code><button onclick="copyText(this)">Copy</button></div></div>
+            <div class="cmd-item placeholder"><p class="instruction">Description here</p><div class="cmd-box"><code># Empty Slot 7</code><button onclick="copyText(this)">Copy</button></div></div>
+            <div class="cmd-item placeholder"><p class="instruction">Description here</p><div class="cmd-box"><code># Empty Slot 8</code><button onclick="copyText(this)">Copy</button></div></div>
+        </section>
+
+        <section id="termux-x11" class="command-section">
+            <h2><i class="fas fa-desktop"></i> Termux-X11 Setup (Stable)</h2>
+            <div class="cmd-item"><p class="instruction"><strong>Location:</strong> Termux | <strong>Task:</strong> Install X11 repo</p><div class="cmd-box"><code>pkg install x11-repo -y</code><button onclick="copyText(this)">Copy</button></div></div>
+            <div class="cmd-item"><p class="instruction"><strong>Location:</strong> Termux | <strong>Task:</strong> Install Termux-X11</p><div class="cmd-box"><code>pkg install termux-x11-nightly -y</code><button onclick="copyText(this)">Copy</button></div></div>
+            <div class="cmd-item placeholder"><p class="instruction">Description here</p><div class="cmd-box"><code># Empty Slot 3</code><button onclick="copyText(this)">Copy</button></div></div>
+            <div class="cmd-item placeholder"><p class="instruction">Description here</p><div class="cmd-box"><code># Empty Slot 4</code><button onclick="copyText(this)">Copy</button></div></div>
+            <div class="cmd-item placeholder"><p class="instruction">Description here</p><div class="cmd-box"><code># Empty Slot 5</code><button onclick="copyText(this)">Copy</button></div></div>
+            <div class="cmd-item placeholder"><p class="instruction">Description here</p><div class="cmd-box"><code># Empty Slot 6</code><button onclick="copyText(this)">Copy</button></div></div>
+            <div class="cmd-item placeholder"><p class="instruction">Description here</p><div class="cmd-box"><code># Empty Slot 7</code><button onclick="copyText(this)">Copy</button></div></div>
+            <div class="cmd-item placeholder"><p class="instruction">Description here</p><div class="cmd-box"><code># Empty Slot 8</code><button onclick="copyText(this)">Copy</button></div></div>
+        </section>
+
+    </main>
+
+    <button id="topBtn" onclick="scrollToTop()"><i class="fas fa-arrow-up"></i></button>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="copyright">&copy; 2026 Nath Sahu | Professional Setup Guide</p>
+            <div class="credits">
+                <span><i class="fas fa-external-link-alt"></i> Official Credits:</span>
+                <a href="https://www.kali.org/" target="_blank">Kali Linux</a> | 
+                <a href="https://github.com/termux/proot-distro" target="_blank">Proot-Distro</a> | 
+                <a href="https://github.com/termux/termux-x11" target="_blank">Termux-X11</a>
+            </div>
+            <p class="disclaimer">Built for educational purposes and mobile Linux optimization.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
